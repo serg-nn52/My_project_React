@@ -12,14 +12,14 @@ const GoodsItem = (props: any) => {
         <img src={fullBackground} alt={displayName} />
       </div>
       <div className="card-content">
-        <span className="card-title">{displayName}</span>
+        <h3 className="card-title">{displayName}</h3>
         <p>{displayDescription}</p>
       </div>
-      <div className="card-action">
+      <div className={style.card_action}>
         <button type="button" className="btn left">
           Купить
         </button>
-        <span className="right">{price}</span>
+        <span className="right">{`${price} руб.`}</span>
       </div>
     </div>
   );

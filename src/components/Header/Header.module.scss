@@ -1,8 +1,15 @@
 .header {
   background-color: #ffffff;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px #152f70 solid;
+
   .logoHeader {
     display: block;
-    width: 33%;
+    width: 30%;
     height: 110px;
     text-align: left;
     img {
@@ -11,18 +18,11 @@
     }
   }
   .oficial {
-    width: 33%;
+    width: 40%;
     font-size: 22px;
-    line-height: 12px;
+    line-height: 100%px;
     text-align: center;
     color: #152f70;
-    span {
-      margin-top: 5px;
-      font-size: 18px;
-      line-height: 29px;
-      text-align: center;
-      display: block;
-    }
   }
   .phone {
     font-weight: bold;
@@ -32,19 +32,17 @@
     display: block;
     transition-duration: 0.3s;
     &:hover {
-      font-size: 18.5px;
-      text-decoration: none;
-      color: darken(#152f70, 20%);
+      color: darken(#152f70, 10%);
     }
   }
   .contacts {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 33%;
+    width: 30%;
   }
   .button {
-    width: 172px;
+    width: 185px;
     height: 32px;
     margin-top: 5px;
     background-color: #c70101;

@@ -15,7 +15,6 @@ const GoodsList: React.FC<goodsType> = (props) => {
   return (
     <div className={style.goods}>
       {goods.map((item: any) => {
-        // eslint-disable-next-line
         return (
           <GoodsItem
             key={item.mainId}

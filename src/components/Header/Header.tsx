@@ -14,14 +14,14 @@ const Header = () => {
         <div className={oficial}>
           Создание под заказ
           <br />
-          <span>сайтов, web-приложений</span>
+          сайтов, web-приложений
         </div>
         <div className={contacts}>
           <a href="tel:+375333210267" className={phone}>
             +375 (33) 321-02-67
           </a>
           <button type="button" className={button}>
-            заказать звонок
+            отправить сообщение
           </button>
         </div>
       </div>

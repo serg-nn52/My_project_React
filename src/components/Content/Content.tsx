@@ -17,13 +17,14 @@ const Content = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        data.shop && setGoods(data.shop);
+        setGoods(data.shop);
         setLoading(false);
       });
   }, []);
 
   return (
     <div className={style.main}>
+      <h1>Пример интернет-магазина с внешним API</h1>
       {loading ? <Preloader /> : <GoodsList goods={goods} />}
     </div>
   );

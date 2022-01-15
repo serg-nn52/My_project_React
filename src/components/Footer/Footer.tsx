@@ -1,33 +1,47 @@
 import React from "react";
-import "./Footer.sass";
+import style from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className={style.footer}>
       <div className="container">
-        <div className="footer-block">
-          <p className="footer-block__title">© 2001-2020 Рубльбанк</p>
-          <p className="footer-block__content">
-            Генеральная лицензия на осуществление банковских операций от 11
-            августа 2015 года. Регистрационный номер - 1234.
-          </p>
+        <div className={style.footer__top}>
+          Лушкин Сергей, +375-33-321-02-67
         </div>
-        <div className="footer-block">
-          <p className="footer-block__title">
-            <span>Обратная связь</span>
-          </p>
-          <p className="footer-block__content">
-            Россия, Москва, 113337, ул. Советская, д. 42
-          </p>
-        </div>
-        <div className="footer-block">
-          <p className="footer-block__content">
-            Информация о процентных ставках по договорам банковского вклада с
-            физическими лицами
-          </p>
-          <p className="footer-block__content">
-            Информация, обязательная к размещению
-          </p>
+        <div className={style.footer__bottom}>
+          <a href="tel:+375333210267">
+            <i className="fas fa-phone-square-alt" />
+          </a>
+          <a href="viber://chat?number=%2B79047999980">
+            <i className="fab fa-viber" />
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=79047999980">
+            <i className="fab fa-whatsapp-square" />
+          </a>
+          <a href="tg://resolve?domain=sergnn1985">
+            <i className="fab fa-telegram" />
+          </a>
+          <a href="mailto:ask@htmlbook.ru">
+            <i className="fas fa-envelope" />
+          </a>
+          <a
+            href="https://github.com/serg-nn52"
+            target="_blank"
+            rel="noreferrer">
+            <i className="fab fa-github-square" />
+          </a>
+          <a
+            href="https://vk.com/serega_nn1985"
+            target="_blank"
+            rel="noreferrer">
+            <i className="fab fa-vk" />
+          </a>
+          <a
+            href="https://www.instagram.com/snizhegorodskii/"
+            target="_blank"
+            rel="noreferrer">
+            <i className="fab fa-instagram-square" />
+          </a>
         </div>
       </div>
     </footer>

@@ -1,7 +1,44 @@
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
   width: 22%;
-  margin: 20px 0;
+  min-width: 260px;
+  margin: 20px 5px;
+  border: 1px #152f70 solid;
+  border-radius: 10px;
+  padding: 1.5%;
+  transition-duration: 0.3s;
+  &_action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-weight: bold;
+    }
+  }
+  p,
+  h3 {
+    display: block;
+    margin: 15px 0;
+    color: #152f70;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
   img {
     width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
   }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card-content {
+  margin-top: 10px;
 }
