@@ -1,0 +1,71 @@
+.header {
+  background-color: #ffffff;
+  .logoHeader {
+    display: block;
+    width: 33%;
+    height: 110px;
+    text-align: left;
+    img {
+      width: 250px;
+      height: 110px;
+    }
+  }
+  .oficial {
+    width: 33%;
+    font-size: 22px;
+    line-height: 12px;
+    text-align: center;
+    color: #152f70;
+    span {
+      margin-top: 5px;
+      font-size: 18px;
+      line-height: 29px;
+      text-align: center;
+      display: block;
+    }
+  }
+  .phone {
+    font-weight: bold;
+    font-size: 18px;
+    color: #152f70;
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.3s;
+    &:hover {
+      font-size: 18.5px;
+      text-decoration: none;
+      color: darken(#152f70, 20%);
+    }
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 33%;
+  }
+  .button {
+    width: 172px;
+    height: 32px;
+    margin-top: 5px;
+    background-color: #c70101;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    transition-duration: 0.3s;
+    &:hover {
+      background-color: darken(#c70101, 5%);
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  composes: container from "../App/App.css";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
