@@ -9,4 +9,19 @@
     margin-bottom: 100px;
     margin-top: 50px;
   }
+  .basket {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      padding: 5px 10px;
+      background-color: #c70101;
+      color: #fff;
+      border-radius: 5px;
+      margin-left: 10px;
+      text-transform: uppercase;
+      &:hover {
+        background-color: darken(#c70101, 5%);
+      }
+    }
+  }
 }

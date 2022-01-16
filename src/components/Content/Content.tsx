@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import style from "./Content.module.scss";
 // eslint-disable-next-line
 import { API_URL } from "../config";
@@ -24,6 +25,12 @@ const Content = () => {
 
   return (
     <div className={style.main}>
+      <div className={style.basket}>
+        <Link to="/registration">Регистрация</Link>
+        <a href="#!">
+          <i className="fas fa-shopping-basket" />
+        </a>
+      </div>
       <h1>Пример интернет-магазина с внешним API</h1>
       {loading ? <Preloader /> : <GoodsList goods={goods} />}
     </div>

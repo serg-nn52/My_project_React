@@ -1,0 +1,17 @@
+.btn {
+  background-color: #253cc3;
+  width: 60%;
+  height: 30px;
+  position: static;
+  margin-top: 25px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:focus {
+    background-color: #253cc3;
+  }
+  &:hover {
+    background-color: darken(#253cc3, 10%);
+  }
+}

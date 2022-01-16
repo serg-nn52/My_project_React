@@ -1,16 +1,20 @@
 import React from "react";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import Content from "../Content/Content";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MainPages from "../../containers/MainPages";
+import RegistrationPage from "../../containers/RegistrationPage";
+import Error404 from "../../containers/Error404";
 import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
-      <Header />
-      <Content />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPages />} />
+          <Route path="/registration" element={<RegistrationPage />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </Router>
     </div>
   );
 };

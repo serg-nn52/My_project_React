@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import style from "./Header.module.scss";
 import logo from "../../images/logo.png";
 
@@ -8,9 +9,9 @@ const Header = () => {
   return (
     <header className={header}>
       <div className={container}>
-        <a href="#id" className={logoHeader}>
+        <Link to="/" className={logoHeader}>
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
         <div className={oficial}>
           Создание под заказ
           <br />
