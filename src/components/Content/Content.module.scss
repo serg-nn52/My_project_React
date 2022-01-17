@@ -18,9 +18,13 @@
       color: #fff;
       border-radius: 5px;
       margin-left: 10px;
+      font-size: 12px;
       text-transform: uppercase;
       &:hover {
         background-color: darken(#c70101, 5%);
+      }
+      i {
+        margin-left: 5px;
       }
     }
   }

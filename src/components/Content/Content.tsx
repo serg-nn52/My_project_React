@@ -28,6 +28,7 @@ const Content = () => {
       <div className={style.basket}>
         <Link to="/registration">Регистрация</Link>
         <a href="#!">
+          Корзина
           <i className="fas fa-shopping-basket" />
         </a>
       </div>
