@@ -8,7 +8,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/My_project_React">
         <Routes>
           <Route path="/" element={<MainPages />} />
           <Route path="/registration" element={<RegistrationPage />} />
