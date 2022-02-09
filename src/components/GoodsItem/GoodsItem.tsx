@@ -1,9 +1,15 @@
 import React from "react";
 import style from "./GoodsItem.module.scss";
 
-const GoodsItem = (props: any) => {
-  // const { mainID, displayName, displayDescription, price, fullBackground } =
-  //   props;
+type GoodsItemType = {
+  mainID: string;
+  displayName: string;
+  displayDescription: string;
+  fullBackground: string;
+  price: number;
+};
+
+const GoodsItem: React.FC<GoodsItemType> = (props) => {
   const { mainID, displayName, displayDescription, fullBackground, price } =
     props;
   return (

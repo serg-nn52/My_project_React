@@ -1,0 +1,26 @@
+.main {
+  composes: container from "../../assets/style/style.scss";
+  margin-top: 160px;
+  min-height: calc(100vh - 110px - 182px - 24px);
+  padding: 10px 0 100px 0;
+
+  .basket {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      padding: 5px 10px;
+      background-color: #c70101;
+      color: #fff;
+      border-radius: 5px;
+      margin-left: 10px;
+      font-size: 12px;
+      text-transform: uppercase;
+      &:hover {
+        background-color: darken(#c70101, 5%);
+      }
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+}

@@ -62,7 +62,7 @@
 }
 
 .container {
-  composes: container from "../App/App.css";
+  composes: container from "../../assets/style/style.scss";
   display: flex;
   justify-content: space-between;
   align-items: center;
