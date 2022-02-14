@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainPages from "../MainPages/MainPages";
-import RegistrationPage from "../RegistrationPage";
-import Error404 from "../Error404";
+import RegistrationPage from "../RegistrationPage/RegistrationPage";
+import Error404 from "../Error404/Error404";
 import "../../assets/style/style.scss";
 import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
