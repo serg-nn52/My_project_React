@@ -1,5 +1,9 @@
+@import "./bootstrap-reboot.min";
+@import "./variables";
+
 .App {
   text-align: center;
+  background-color: #fff;
 }
 
 body,
@@ -17,6 +21,7 @@ button {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: #152f70;
+  text-decoration: none;
 }
 
 .container {

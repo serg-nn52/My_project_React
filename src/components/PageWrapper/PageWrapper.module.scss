@@ -1,12 +1,17 @@
 .main {
   composes: container from "../../assets/style/style.scss";
-  margin-top: 160px;
-  min-height: calc(100vh - 110px - 182px - 24px);
-  padding: 10px 0 100px 0;
 
-  .basket {
+  min-height: calc(100vh - 110px - 182px - 24px);
+  padding: 160px 0 100px 0;
+  background-color: inherit;
+  .subheader {
     display: flex;
     justify-content: flex-end;
+    position: fixed;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1140px;
+    z-index: 5;
     a {
       padding: 5px 10px;
       background-color: #c70101;
@@ -15,6 +20,10 @@
       margin-left: 10px;
       font-size: 12px;
       text-transform: uppercase;
+      &:first-child {
+        margin-right: auto;
+        margin-left: 0;
+      }
       &:hover {
         background-color: darken(#c70101, 5%);
       }

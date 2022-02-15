@@ -14,7 +14,7 @@ const GoodsList: React.FC<goodsType> = (props) => {
   const { goods } = props;
   const navArr = [];
   let { id } = useParams();
-  id === undefined ? (id = "1") : id;
+  id === undefined || +id > Math.ceil(goods.length / 12) ? (id = "1") : id;
   for (let i = 0; i < Math.ceil(goods.length / 12); i += 1) {
     navArr[i] = i + 1;
   }

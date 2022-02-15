@@ -2,13 +2,13 @@
 import { ShopCounterType } from "./actions";
 
 const initialState = {
-  count: 0,
+  count: "",
 };
 
 const reducer = (state = initialState, action: any) => {
   switch (action.type) {
     case ShopCounterType.plusCount:
-      return state;
+      return { ...state, count: +state.count + 1 };
     default:
       return state;
   }

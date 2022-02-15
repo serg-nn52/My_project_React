@@ -1,14 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useSelector } from "react-redux";
 import MainPages from "../MainPages/MainPages";
 import RegistrationPage from "../RegistrationPage/RegistrationPage";
 import Error404 from "../Error404/Error404";
 import "../../assets/style/style.scss";
 import PageWrapper from "../../components/PageWrapper/PageWrapper";
+import { getDarkTheme } from "../../store/darkTheme/selectors";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App" style={useSelector(getDarkTheme)}>
       <Router basename="/My_project_React">
         <Routes>
           <Route path="/" element={<PageWrapper />}>

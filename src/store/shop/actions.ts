@@ -5,9 +5,8 @@ export enum ShopCounterType {
   plusCount = "SET_PLUS_COUNT",
 }
 
-export const createPlusCountAction = (data: any) => {
+export const createPlusCountAction = () => {
   return {
     type: ShopCounterType.plusCount,
-    payload: data,
   };
 };
