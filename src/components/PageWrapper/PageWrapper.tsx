@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import Basket from "../Basket/Basket";
 import style from "./PageWrapper.module.scss";
 import {
   createDarkThemeAction,
@@ -30,10 +31,7 @@ const PageWrapper: React.FC = () => {
             {isWhite === true ? "Темная тема" : "Светлая тема"}
           </a>
           <Link to="/registration">Регистрация</Link>
-          <a href="#!" className={style.basket}>
-            Корзина
-            <i className="fas fa-shopping-basket" />
-          </a>
+          <Basket />
         </div>
         <Outlet />
       </main>
