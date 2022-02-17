@@ -5,14 +5,12 @@ import style from "./Header.module.scss";
 import logo from "../../images/logo.png";
 import darkLogo from "../../images/darkLogo.png";
 import { getDarkTheme } from "../../store/darkTheme/selectors";
-import { getgoodsInBasket } from "../../store/shop/selectors";
 // import { getDarkTheme } from "../../store/darkTheme/selectors";
 
 const Header: React.FC<any> = () => {
   const { header, logoHeader, oficial, contacts, phone, button, container } =
     style;
   const isWhite = useSelector(getDarkTheme).backgroundColor === ` white`;
-  console.log(useSelector(getgoodsInBasket));
   return (
     <header className={header}>
       <div className={container}>

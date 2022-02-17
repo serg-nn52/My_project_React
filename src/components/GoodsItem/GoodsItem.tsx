@@ -14,6 +14,7 @@ type GoodsItemType = {
 const GoodsItem: React.FC<GoodsItemType> = (props) => {
   const { mainID, displayName, displayDescription, fullBackground, price } =
     props;
+
   const dispatch = useDispatch();
 
   return (

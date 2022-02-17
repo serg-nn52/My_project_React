@@ -7,6 +7,7 @@ import Error404 from "../Error404/Error404";
 import "../../assets/style/style.scss";
 import PageWrapper from "../../components/PageWrapper/PageWrapper";
 import { getDarkTheme } from "../../store/darkTheme/selectors";
+import BasketPage from "../BasketPage/BasketPage";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<PageWrapper />}>
             <Route path="/" element={<MainPages />} />
             <Route path="/:id" element={<MainPages />} />
+            <Route path="/basket" element={<BasketPage />} />
             <Route path="/registration" element={<RegistrationPage />} />
             <Route path="*" element={<Error404 />} />
           </Route>

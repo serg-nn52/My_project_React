@@ -1,7 +1,7 @@
 .main {
   composes: container from "../../assets/style/style.scss";
 
-  min-height: calc(100vh - 110px - 182px - 24px);
+  min-height: calc(100vh - 164px);
   padding: 160px 0 100px 0;
   background-color: inherit;
   .subheader {
