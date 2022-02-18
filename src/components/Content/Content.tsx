@@ -1,29 +1,20 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import style from "./Content.module.scss";
-import { API_URL, API_KEY } from "../config";
 import Preloader from "../Preloader/Preloader";
 import GoodsList from "../GoodsList/GoodsList";
+import { createGetGoods, createLoading } from "../../store/goods/actions";
+import { getAllGoods, getLoading } from "../../store/goods/selectors";
 
 const Content = () => {
-  const [goods, setGoods] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const getGoods = () => {
-    axios
-      .get(API_URL, {
-        headers: {
-          Authorization: API_KEY!,
-        },
-      })
-      .then((response) => {
-        setGoods(response.data.shop);
-        setLoading(false);
-      })
-      .catch((e) => {
-        console.error(e);
-      });
-  };
-  useEffect(getGoods, []);
+  const dispatch = useDispatch();
+  const goods = useSelector(getAllGoods);
+  const loading = useSelector(getLoading);
+
+  useEffect(() => {
+    dispatch(createGetGoods());
+    dispatch(createLoading());
+  }, []);
 
   return (
     <div className={style.main}>

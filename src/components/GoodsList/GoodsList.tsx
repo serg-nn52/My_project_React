@@ -7,7 +7,7 @@ import style from "./GoodsList.module.scss";
 import GoodsItem from "../GoodsItem/GoodsItem";
 
 type goodsType = {
-  goods: never[];
+  goods: any;
 };
 
 const GoodsList: React.FC<goodsType> = (props) => {
