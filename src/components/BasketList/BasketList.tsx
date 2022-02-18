@@ -9,7 +9,6 @@ const BasketList = () => {
   const totalPrice = goodsInBasket
     .map((el: any) => el.price)
     .reduce((a: string, b: string) => +a + +b, 0);
-  console.log(totalPrice);
   return goodsInBasket.length === 0 ? (
     <h2>В корзине нет товаров!</h2>
   ) : (
