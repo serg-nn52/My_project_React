@@ -2,7 +2,7 @@
 
 import { GoodsType } from "./actions";
 
-const initialState: any = { goods: [], loading: true };
+const initialState: any = { goods: [], loading: true, search: "" };
 
 const reducer = (state = initialState, action: any) => {
   switch (action.type) {
@@ -12,6 +12,9 @@ const reducer = (state = initialState, action: any) => {
     case GoodsType.loading:
       // eslint-disable-next-line no-return-assign
       return { ...state, loading: action.payload };
+    case GoodsType.search:
+      // eslint-disable-next-line no-return-assign
+      return { ...state, search: action.payload };
     default:
       return state;
   }

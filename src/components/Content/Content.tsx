@@ -3,7 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import style from "./Content.module.scss";
 import Preloader from "../Preloader/Preloader";
 import GoodsList from "../GoodsList/GoodsList";
-import { createGetGoods, createLoading } from "../../store/goods/actions";
+import {
+  createGetGoodsAction,
+  createLoadingAction,
+} from "../../store/goods/actions";
 import { getAllGoods, getLoading } from "../../store/goods/selectors";
 
 const Content = () => {
@@ -11,9 +14,11 @@ const Content = () => {
   const goods = useSelector(getAllGoods);
   const loading = useSelector(getLoading);
 
+  // console.log(search);
+
   useEffect(() => {
-    dispatch(createGetGoods());
-    dispatch(createLoading());
+    dispatch(createGetGoodsAction());
+    dispatch(createLoadingAction());
   }, []);
 
   return (
