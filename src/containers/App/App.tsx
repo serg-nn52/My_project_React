@@ -5,9 +5,10 @@ import MainPages from "../MainPages/MainPages";
 import RegistrationPage from "../RegistrationPage/RegistrationPage";
 import Error404 from "../Error404/Error404";
 import "../../assets/style/style.scss";
-import PageWrapper from "../../components/PageWrapper/PageWrapper";
+import PageWrapper from "../../components/Common/PageWrapper/PageWrapper";
 import { getDarkTheme } from "../../store/darkTheme/selectors";
 import BasketPage from "../BasketPage/BasketPage";
+import OrderOkPage from "../OrderOkPage/OrderOkPage";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/:id" element={<MainPages />} />
             <Route path="/basket" element={<BasketPage />} />
             <Route path="/registration" element={<RegistrationPage />} />
+            <Route path="/orderok" element={<OrderOkPage />} />
             <Route path="*" element={<Error404 />} />
           </Route>
         </Routes>

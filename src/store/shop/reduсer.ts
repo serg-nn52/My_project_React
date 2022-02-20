@@ -12,6 +12,9 @@ const reducer = (state = initialState, action: any) => {
     case ShopCounterType.minusCount:
       // eslint-disable-next-line no-return-assign
       return state.filter((el) => el.mainID !== action.payload);
+    case ShopCounterType.reset:
+      // eslint-disable-next-line no-return-assign
+      return [];
     default:
       return state;
   }

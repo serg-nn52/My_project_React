@@ -6,7 +6,8 @@ import style from "./Search.module.scss";
 const Search = () => {
   const search = React.useRef<HTMLInputElement>(null);
   const dispatch = useDispatch();
-  const searchGoods = () => {
+  const searchGoods = (e: any) => {
+    e.preventDefault();
     const searchValue = search === null ? "" : search.current?.value;
     dispatch(createSearchAction(searchValue));
   };

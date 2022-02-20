@@ -46,6 +46,7 @@
   .button {
     width: 185px;
     height: 32px;
+    line-height: 32px;
     margin-top: 5px;
     background-color: #c70101;
     border-radius: 5px;
@@ -63,7 +64,7 @@
 }
 
 .container {
-  composes: container from "../../assets/style/style.scss";
+  composes: container from "../../../assets/style/style.scss";
   display: flex;
   justify-content: space-between;
   align-items: center;

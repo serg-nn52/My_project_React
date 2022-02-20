@@ -2,6 +2,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { getgoodsInBasket } from "../../store/shop/selectors";
+import BasketForm from "../BasketForm/BasketForm";
 import BasketItem from "../BasketItem/BasketItem";
 
 const BasketList = () => {
@@ -23,6 +24,7 @@ const BasketList = () => {
         })}
       </ul>
       <p>Общая стоимость товаров {totalPrice} рублей</p>
+      <BasketForm />
     </>
   );
 };

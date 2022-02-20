@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import Basket from "../Basket/Basket";
+import Basket from "../../Basket/Basket";
 import style from "./PageWrapper.module.scss";
 import {
   createDarkThemeAction,
   createWhiteThemeAction,
-} from "../../store/darkTheme/actions";
-import { getDarkTheme } from "../../store/darkTheme/selectors";
+} from "../../../store/darkTheme/actions";
+import { getDarkTheme } from "../../../store/darkTheme/selectors";
 
 const PageWrapper: React.FC = () => {
   const dispatch = useDispatch();

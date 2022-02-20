@@ -8,10 +8,6 @@ export enum DarkThemeType {
 export const createDarkThemeAction = () => {
   return {
     type: DarkThemeType.darkTheme,
-    // payload: {
-    //   style: {
-    //     backgroundColor: "grey",
-    //   },
     payload: {
       backgroundColor: ` gray`,
     },
