@@ -4,6 +4,7 @@
 }
 .form {
   width: 300px;
+  max-width: 100%;
   margin: 0 auto;
   margin-top: 30px;
   label {
@@ -16,6 +17,14 @@
     width: 100% !important;
     height: 30px !important;
     box-sizing: border-box !important;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield !important;
+  }
+
+  input::-webkit-outer-spin-button,   //убираю стрелочки у input type='number'
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
   }
   textarea {
     width: 100% !important;

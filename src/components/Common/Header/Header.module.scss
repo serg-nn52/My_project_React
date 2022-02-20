@@ -22,7 +22,7 @@
   .oficial {
     width: 40%;
     font-size: 22px;
-    line-height: 100%px;
+    line-height: 100%;
     text-align: center;
     color: #152f70;
   }
@@ -40,7 +40,7 @@
   .contacts {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     width: 30%;
   }
   .button {
@@ -69,4 +69,82 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100px;
+}
+
+@media (max-width: 890px) {
+  .header {
+    .logoHeader {
+      height: 100px;
+      img {
+        width: auto;
+        height: 100px;
+      }
+    }
+    // .container {
+    //   flex-wrap: wrap;
+    //   justify-content: space-between;
+    // }
+  }
+}
+@media (max-width: 695px) {
+  .header {
+    height: 170px;
+  }
+  .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1140px;
+    .logoHeader {
+      width: 40%;
+    }
+    .oficial {
+      width: 60%;
+      text-align: right;
+    }
+    .contacts {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    height: 150px;
+    .logoHeader {
+      width: 30%;
+      line-height: 80px;
+      height: 80px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .oficial {
+      width: 70%;
+      font-size: 16px;
+    }
+    .phone {
+      font-size: 14px;
+    }
+    .button {
+      width: 170px;
+      height: 25px;
+      line-height: 25px;
+      margin-top: 3px;
+      font-size: 10px;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .header {
+    height: 150px;
+    .logoHeader {
+      width: 35%;
+    }
+    .oficial {
+      width: 65%;
+      font-size: 12px;
+    }
+  }
 }

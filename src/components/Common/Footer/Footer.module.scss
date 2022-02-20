@@ -25,3 +25,13 @@
     }
   }
 }
+@media (max-width: 420px) {
+  .footer {
+    &__top {
+      font-size: 15px;
+    }
+    &__bottom {
+      width: auto;
+    }
+  }
+}

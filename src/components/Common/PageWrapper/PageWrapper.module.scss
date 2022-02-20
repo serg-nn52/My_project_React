@@ -2,7 +2,7 @@
   composes: container from "../../../assets/style/style.scss";
 
   min-height: calc(100vh - 164px);
-  padding: 120px 0 100px 0;
+  padding: 190px 0 100px 0;
   background-color: inherit;
   .subheader {
     display: flex;
@@ -30,6 +30,41 @@
       }
       i {
         margin-left: 5px;
+      }
+    }
+  }
+}
+@media (max-width: 695px) {
+  .main {
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 540px) {
+  .main {
+    .subheader {
+      a {
+        padding: 2px;
+        width: 100px;
+        border-radius: 5px;
+        margin-left: 3px;
+        font-size: 8px;
+        line-height: 13px;
+        text-transform: uppercase;
+        i {
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    padding-top: 160px;
+    .subheader {
+      a {
+        width: 75px;
+        padding: 1px;
+        font-size: 7px;
       }
     }
   }

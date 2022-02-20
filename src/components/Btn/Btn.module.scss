@@ -15,3 +15,17 @@
     background-color: darken(#253cc3, 10%);
   }
 }
+
+.password_btn {
+  position: absolute;
+  top: 45px;
+  right: 47px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 360px) {
+  .btn {
+    font-size: 13px;
+  }
+}
