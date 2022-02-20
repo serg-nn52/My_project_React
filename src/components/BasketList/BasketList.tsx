@@ -15,11 +15,11 @@ const BasketList = () => {
     <h2 className={style.title}>В корзине нет товаров!</h2>
   ) : (
     <>
-      <ul>
+      <ul className={style.list}>
         {goodsInBasket.map((item: any, i: number) => {
           return (
-            <li key={item.mainID} className={style.list}>
-              <BasketItem product={item} i={i} />
+            <li>
+              <BasketItem product={item} i={i} key={item.mainID} />
             </li>
           );
         })}
