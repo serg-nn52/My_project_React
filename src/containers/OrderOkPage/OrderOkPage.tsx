@@ -1,9 +1,8 @@
 import React from "react";
+import OrderOk from "../../components/OrderOk/OrderOk";
 
 const OrderOkPage = () => {
-  return (
-    <h2>Спасибо за заказ, наш менеджер свяжется с Вами в ближайшее время!</h2>
-  );
+  return <OrderOk />;
 };
 
 export default OrderOkPage;

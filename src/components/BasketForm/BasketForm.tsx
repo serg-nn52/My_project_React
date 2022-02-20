@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { createSetOrderAction } from "../../store/order/actions";
 import { createResetAction } from "../../store/shop/actions";
 import { getgoodsInBasket } from "../../store/shop/selectors";
+import style from "./BasketForm.module.scss";
 
 const BasketForm = () => {
   const userName = React.useRef<HTMLInputElement>(null);
@@ -30,8 +31,8 @@ const BasketForm = () => {
   };
   return (
     <>
-      <h2>Оставьте данные для уточнения заказа</h2>
-      <form action="#">
+      <h2 className={style.title}>Оставьте данные для уточнения заказа</h2>
+      <form action="#" className={style.form}>
         <label htmlFor="userName">Введите имя</label>
         <input
           id="userName"
